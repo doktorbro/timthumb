@@ -15,6 +15,6 @@ Ben’s [answer](https://twitter.com/BinaryMoon/status/386213721259126784):
 
 > you're welcome to do whatever you like with it. Whatever I pick I have people asking me to change :)
 
-Ben’s [clarification](https://twitter.com/BinaryMoon/status/386213834253688832)
+Ben’s [clarification](https://twitter.com/BinaryMoon/status/386213834253688832):
 
 > google code doesn't give many options so I picked what I know.
