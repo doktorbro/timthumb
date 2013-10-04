@@ -1,11 +1,13 @@
 TimThumb — PHP Image Resizer
 =======
 
-This is a mirror of the [original repository](http://code.google.com/p/timthumb/).
+A small php script for cropping, zooming and resizing web images (jpg, png, gif). Perfect for use on blogs and other applications. You can read more about the script, along with TimThumb tutorials, on the [TimThumb Project Homepage](http://www.binarymoon.co.uk/projects/timthumb/).
+
+_This is a mirror of the [original repository](http://code.google.com/p/timthumb/)._
 
 ## Important License Note
 
-The conversation on Twitter from 2013-10-04 extends the applied GPL.
+The conversation from 2013-10-04 on Twitter extends the applied GPL to a more liberal license.
 
 Anatol’s [question](https://twitter.com/penibelst/status/386198036579237888):
 
