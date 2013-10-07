@@ -52,6 +52,7 @@ if(! defined('MAX_HEIGHT') )				define ('MAX_HEIGHT', 1500);							// Maximum im
 if(! defined('NOT_FOUND_IMAGE') )			define ('NOT_FOUND_IMAGE', '');							// Image to serve if any 404 occurs 
 if(! defined('ERROR_IMAGE') )				define ('ERROR_IMAGE', '');								// Image to serve if an error occurs instead of showing error message 
 if(! defined('PNG_IS_TRANSPARENT') )		define ('PNG_IS_TRANSPARENT', FALSE);					// Define if a png image should have a transparent background color. Use False value if you want to display a custom coloured canvas_colour 
+if(! defined('JPEG_IS_PROGRESSIVE') )		define ('JPEG_IS_PROGRESSIVE', FALSE);					// Define if a created jpeg image is progressive
 if(! defined('DEFAULT_Q') )					define ('DEFAULT_Q', 90);								// Default image quality. Allows overrid in timthumb-config.php
 if(! defined('DEFAULT_ZC') )				define ('DEFAULT_ZC', 1);								// Default zoom/crop setting. Allows overrid in timthumb-config.php
 if(! defined('DEFAULT_F') )					define ('DEFAULT_F', '');								// Default image filters. Allows overrid in timthumb-config.php
@@ -750,6 +751,7 @@ class timthumb {
 		$tempfile = tempnam($this->cacheDirectory, 'timthumb_tmpimg_');
 		if(preg_match('/^image\/(?:jpg|jpeg)$/i', $mimeType)){ 
 			$imgType = 'jpg';
+			imageinterlace($canvas, JPEG_IS_PROGRESSIVE);
 			imagejpeg($canvas, $tempfile, $quality); 
 		} else if(preg_match('/^image\/png$/i', $mimeType)){ 
 			$imgType = 'png';
